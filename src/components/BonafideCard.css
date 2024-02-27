@@ -1,0 +1,75 @@
+/* BonafideCard.css */
+
+.bonafide-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 20px; */
+}
+
+.bonafide-card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.bonafide-details {
+  margin-bottom: 20px;
+}
+
+.tutor-info {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: bisque;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.accept-btn,
+.reject-btn,
+.get-pdf-btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accept-btn {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.reject-btn {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.get-pdf-btn {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.accept-btn:hover,
+.reject-btn:hover {
+  opacity: 0.8;
+}
+
+.get-pdf-btn:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+hr {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px solid black;
+}

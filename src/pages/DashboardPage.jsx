@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { useSelector } from "react-redux";
 import BonafideCard from "../components/BonafideCard";
 import "./DashboardPage.css";
@@ -32,7 +32,6 @@ const DashboardPage = () => {
     const getData = async () => {
       try {
         const response = await axiosConfig.get("/getReports");
-        console.log(response);
         if (response.status == 200) {
           setBonafideData(response.data.bonafideRequests);
         }

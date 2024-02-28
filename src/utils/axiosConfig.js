@@ -21,8 +21,6 @@ axiosConfig.interceptors.request.use(
     const token = sessionStorage.getItem("access_token");
     if (token) config.headers.Authorization = `Bearer ${token}`;
 
-    // Update baseURL based on the current user state before each request
-    config.baseURL = `${import.meta.env.VITE_API_LINK}/${getUserFromStore()}`;
     return config;
   },
   (error) => {

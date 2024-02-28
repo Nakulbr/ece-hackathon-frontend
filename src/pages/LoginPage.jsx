@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { setUser } from "../redux/user/userSlice";
 import axiosConfig from "../utils/axiosConfig";
 import "./LoginPage.css";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const LoginPage = () => {
   const dispatch = useDispatch();
@@ -80,7 +80,7 @@ const LoginPage = () => {
               onChange={onChange}
               required
             />
-            {/* <i className="bx bxs-user"></i> */}
+            <i className="bx bxs-user"></i>
           </div>
           <div className="input-box">
             <input
@@ -91,7 +91,7 @@ const LoginPage = () => {
               onChange={onChange}
               required
             />
-            {/* <i className="bx bxs-lock-alt"></i> */}
+            <i className="bx bxs-lock-alt"></i>
           </div>
           <div className="remember-forgot">
             <label>
